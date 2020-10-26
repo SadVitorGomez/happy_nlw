@@ -10,6 +10,7 @@ import OrphanageDetails from "./pages/OrphanageDetails";
 import OrphanageData from "./pages/CreateOrphanage/OrphanageData";
 import SelectMapPosition from "./pages/CreateOrphanage/SelectMapPosition";
 import Header from "./components/Header";
+import CustomOnboarding from "./pages/Onboarding";
 
 export default function Routes() {
   return (
@@ -20,6 +21,7 @@ export default function Routes() {
           cardStyle: { backgroundColor: "#f2f3f5" },
         }}
       >
+        <Screen name="CustomOnboarding" component={CustomOnboarding} />
         <Screen name="OrphanagesMap" component={OrphanagesMap} />
         <Screen
           name="OrphanageDetails"
